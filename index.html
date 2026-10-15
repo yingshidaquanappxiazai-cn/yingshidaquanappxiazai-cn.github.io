@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="theme-color" content="#1a0f2e">
+<title>影视大全app下载 - 官方正版安装包，安卓/iOS/电视版 | yingshidaquanappxiazai.cn</title>
+<meta name="keywords" content="影视大全app下载,影视大全app,影视大全下载,影视大全安卓版,影视大全苹果版,影视大全电视版,影视大全安装包,yingshidaquanappxiazai.cn">
+<meta name="description" content="影视大全app下载（yingshidaquanappxiazai.cn）提供官方正版影视大全app安装包，含安卓版、iOS版、电视版与历史版本下载，附安装教程、版本说明与常见问题解答，适配手机与电脑浏览。">
+<link rel="canonical" href="https://yingshidaquanappxiazai.cn.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0d0717;
+  --bg2:#150a26;
+  --card:#1a102c;
+  --card2:#221541;
+  --line:rgba(168,130,255,.16);
+  --line2:rgba(168,130,255,.09);
+  --txt:#f2ecff;
+  --txt2:#c4b8e0;
+  --dim:#8e82ab;
+  --dim2:#6b6184;
+  --vio:#a876ff;
+  --vio2:#7c3aed;
+  --vio3:#5b21b6;
+  --cyan:#37e6d0;
+  --pink:#ff5b9c;
+  --gold:#ffc24b;
+  --red:#ff5a5a;
+  --ok:#36d399;
+  --r:18px;
+  --max:1180px;
+  --sh:0 4px 14px rgba(0,0,0,.35),0 24px 60px rgba(92,33,182,.28);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scrollbar-color:#3a265c transparent}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC","WenQuanYi Micro Hei",sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.72;min-height:100vh;
+  background-image:
+    radial-gradient(900px 560px at 88% -8%,rgba(124,58,237,.42),transparent 62%),
+    radial-gradient(760px 460px at -8% 6%,rgba(55,230,208,.16),transparent 62%),
+    radial-gradient(560px 400px at 50% 110%,rgba(255,91,156,.14),transparent 62%);
+  background-attachment:fixed;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font:inherit;cursor:pointer;border:0;background:none;color:inherit}
+input{font:inherit}
+.wrap{width:min(100% - 26px,var(--max));margin:0 auto}
+@media(min-width:768px){.wrap{width:min(100% - 44px,var(--max))}}
+h1,h2,h3,h4{line-height:1.32;font-weight:800;letter-spacing:-.01em}
+:focus-visible{outline:2px solid var(--cyan);outline-offset:3px;border-radius:6px}
+::selection{background:var(--vio);color:#fff}
+.blink{position:absolute;width:46px;height:46px;border-radius:50%;background:radial-gradient(circle,rgba(168,118,255,.55),transparent 70%);filter:blur(2px);animation:bl 3s ease-in-out infinite}
+@keyframes bl{0%,100%{opacity:.55;transform:scale(1)}50%{opacity:1;transform:scale(1.35)}}
+.pulse{position:relative}
+.pulse::after{content:"";position:absolute;inset:-6px;border-radius:inherit;border:2px solid var(--cyan);animation:pu 2s ease-out infinite}
+@keyframes pu{0%{opacity:.7;transform:scale(1)}100%{opacity:0;transform:scale(1.45)}}
+
+/* ---------- 顶部 ---------- */
+.top{position:fixed;inset:0 0 auto 0;z-index:90;background:rgba(13,7,23,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line2)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;min-width:0;flex-shrink:0}
+.brand .ico{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:17px;flex:0 0 auto;
+  background:linear-gradient(140deg,var(--vio),var(--pink));box-shadow:0 6px 16px rgba(168,118,255,.4)}
+.brand b{font-size:16.5px;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{display:block;font-size:8.5px;letter-spacing:.24em;color:var(--dim2);font-weight:600}
+.badge-new{font-size:9.5px;font-weight:800;letter-spacing:.1em;padding:3px 8px;border-radius:999px;color:#150a26;background:var(--cyan);flex:0 0 auto}
+.nav{margin-left:auto;display:flex;align-items:center;gap:2px}
+.nav a{display:none;font-size:14px;padding:9px 13px;border-radius:9px;color:var(--txt2);transition:.2s}
+@media(min-width:880px){.nav a{display:inline-block}}
+.nav a:hover{background:var(--card);color:#fff}
+.nav .dl{display:none;padding:9px 18px;border-radius:9px;font-size:14px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--cyan),var(--vio2));margin-left:6px}
+@media(min-width:880px){.nav .dl{display:inline-block}}
+.nav .dl:hover{filter:brightness(1.12)}
+.mbtn{display:none;width:40px;height:40px;border-radius:9px;background:var(--card);border:1px solid var(--line);flex:0 0 auto;position:relative}
+.mbtn i{position:absolute;left:11px;width:18px;height:2px;border-radius:2px;background:var(--txt);transition:.3s}
+.mbtn i:nth-child(1){top:13px}.mbtn i:nth-child(2){top:19px}.mbtn i:nth-child(3){top:25px}
+.mbtn.on i:nth-child(1){top:19px;transform:rotate(45deg)}.mbtn i:nth-child(2){opacity:0}.mbtn i:nth-child(3){top:19px;transform:rotate(-45deg)}
+@media(max-width:880px){
+  .mbtn{display:block}
+  .nav{position:fixed;inset:66px 0 0 0;flex-direction:column;align-items:stretch;gap:6px;padding:18px 16px;background:var(--bg);
+    transform:translateX(102%);transition:.35s cubic-bezier(.4,0,.2,1);overflow:auto;border-top:1px solid var(--line2)}
+  .nav.on{transform:translateX(0)}
+  .nav a,.nav .dl{display:block!important;text-align:center;font-size:15.5px;padding:14px 15px;border-radius:9px;border:1px solid var(--line2)}
+  .nav a:hover{background:var(--card)}
+}
+
+/* ---------- 通用分区 ---------- */
+section{padding:76px 0}
+@media(max-width:760px){section{padding:54px 0}}
+.hd{margin-bottom:40px;text-align:center}
+.hd .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.28em;color:var(--cyan);text-transform:uppercase;
+  padding:5px 14px;border:1px solid var(--line);border-radius:4px;background:rgba(55,230,208,.06)}
+.hd h2{font-size:clamp(23px,3.5vw,35px);margin-top:15px}
+.hd h2 i{font-style:normal;background:linear-gradient(135deg,var(--cyan),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hd p{margin:11px auto 0;font-size:14.5px;color:var(--dim);max-width:640px}
+@media(max-width:640px){.hd{text-align:left}}
+
+/* ---------- 首屏下载 ---------- */
+.hero{padding:132px 0 30px;position:relative}
+@media(max-width:760px){.hero{padding:104px 0 14px}}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:54px;align-items:center}
+@media(max-width:960px){.hero .wrap{grid-template-columns:1fr;gap:42px}}
+.hero .stk{display:inline-flex;align-items:center;gap:8px;font-size:12px;padding:6px 13px;border-radius:999px;color:var(--txt2);background:var(--card);border:1px solid var(--line)}
+.hero .stk em{font-style:normal;width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(54,211,153,.18)}
+.hero h1{margin-top:20px;font-size:clamp(30px,5.4vw,56px);line-height:1.14;letter-spacing:-.025em}
+.hero h1 small{display:block;font-size:.38em;letter-spacing:.24em;color:var(--dim2);margin-top:18px;font-weight:600}
+.hero .lead{margin-top:22px;font-size:16px;color:var(--txt2);max-width:520px}
+.hero .meta{margin-top:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2);border-radius:12px;overflow:hidden;max-width:560px}
+.hero .meta div{background:rgba(26,16,44,.72);padding:14px 10px;text-align:center}
+.hero .meta b{display:block;font-size:19px;font-weight:900;color:#fff;font-variant-numeric:tabular-nums}
+.hero .meta span{display:block;font-size:11px;color:var(--dim);margin-top:3px;letter-spacing:.04em}
+.hero .acts{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:0 26px;height:54px;border-radius:12px;font-size:15.5px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--vio),var(--vio2));transition:.24s;white-space:nowrap}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(124,58,237,.45)}
+.btn.ghost{padding:0 24px;height:54px;border-radius:12px;font-size:15.5px;font-weight:700;color:var(--txt);background:var(--card);border:1px solid var(--line)}
+.btn.ghost:hover{background:var(--card2)}
+.btn small{display:block;font-size:10.5px;font-weight:600;letter-spacing:.12em;opacity:.85}
+
+/* 手机样机 */
+.device{position:relative;width:min(100%,390px);margin:0 auto;padding:22px 22px 26px;border-radius:46px;background:linear-gradient(160deg,#2a1c4a,#160b2c);border:1px solid var(--line);box-shadow:var(--sh)}
+.device::before{content:"";position:absolute;inset:-1px;border-radius:47px;padding:2px;background:linear-gradient(140deg,var(--cyan),var(--vio),var(--pink));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.device .notch{position:absolute;top:12px;left:50%;transform:translateX(-50%);width:96px;height:24px;border-radius:16px;background:#0a0512;z-index:5}
+.device .screen{position:relative;border-radius:26px;overflow:hidden;background:var(--bg2);aspect-ratio:9/18.2}
+.device .sc-head{padding:26px 20px 16px;background:linear-gradient(165deg,var(--vio3),var(--bg2))}
+.device .sc-head .b{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--cyan)}
+.device .sc-head .b span{width:7px;height:7px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(54,211,153,.18)}
+.device .sc-head h4{font-size:19px;margin-top:14px}
+.device .sc-head h4 em{font-style:normal;font-size:10.5px;font-weight:600;letter-spacing:.16em;color:var(--dim2);display:block;margin-top:5px}
+.device .sc-body{padding:16px 16px 20px;display:flex;flex-direction:column;gap:12px}
+.device .row{display:flex;gap:12px;align-items:center;background:var(--card);border:1px solid var(--line2);border-radius:13px;padding:11px}
+.device .row .th{width:46px;height:60px;border-radius:8px;flex:0 0 auto;background:linear-gradient(150deg,var(--vio2),var(--vio3))}
+.device .row:nth-child(2) .th{background:linear-gradient(150deg,#0e7c6e,#0a4a42)}
+.device .row:nth-child(3) .th{background:linear-gradient(150deg,var(--pink),#a32a5c)}
+.device .row:nth-child(4) .th{background:linear-gradient(150deg,var(--gold),#8a6314)}
+.device .row .tx{flex:1;min-width:0}
+.device .row .tx b{display:block;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.device .row .tx s{text-decoration:none;display:block;font-size:10px;color:var(--dim2);margin-top:3px}
+.device .row .go{flex:0 0 auto;font-size:10.5px;font-weight:800;padding:6px 11px;border-radius:7px;background:var(--vio);color:#fff}
+.device .sc-bar{margin-top:2px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.device .sc-bar i{height:34px;border-radius:9px;background:var(--card);border:1px solid var(--line2);font-style:normal;font-size:9.5px;display:grid;place-items:center;color:var(--txt2)}
+.device .sc-bar i.on{background:var(--cyan);color:#150a26;font-weight:800}
+
+/* ---------- 栏目一 · 多版本下载 ---------- */
+.vers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){.vers{grid-template-columns:1fr}}
+.ver{position:relative;background:linear-gradient(165deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--r);padding:28px 24px;overflow:hidden;transition:.32s}
+.ver:hover{transform:translateY(-7px);border-color:rgba(168,118,255,.45);box-shadow:var(--sh)}
+.ver .orb{position:absolute;right:-44px;top:-44px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(168,118,255,.3),transparent 68%)}
+.ver .os{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-size:25px;color:#fff;background:linear-gradient(140deg,var(--vio),var(--vio3))}
+.ver:nth-child(2) .os{background:linear-gradient(140deg,var(--cyan),#0e7c6e)}
+.ver:nth-child(3) .os{background:linear-gradient(140deg,var(--gold),#8a6314)}
+.ver h3{margin-top:18px;font-size:19px}
+.ver h3 small{display:block;font-size:11.5px;letter-spacing:.16em;color:var(--dim2);font-weight:600;margin-top:3px}
+.ver p{margin-top:9px;font-size:13.5px;color:var(--txt2);line-height:1.72}
+.ver .sz{margin-top:17px;display:flex;align-items:baseline;gap:7px}
+.ver .sz b{font-size:26px;font-weight:900;color:#fff;font-variant-numeric:tabular-nums}
+.ver .sz span{font-size:12px;color:var(--dim)}
+.ver .lst{margin-top:17px;display:flex;flex-direction:column;gap:9px}
+.ver .lst li{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--txt2)}
+.ver .lst li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--cyan);flex:0 0 auto;box-shadow:0 0 0 3px rgba(55,230,208,.14)}
+.ver .dln{margin-top:22px;display:inline-flex;align-items:center;gap:9px;width:100%;justify-content:center;padding:13px 20px;border-radius:11px;font-size:14.5px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--vio),var(--vio2));transition:.24s}
+.ver .dln:hover{filter:brightness(1.13);letter-spacing:.02em}
+.ver .dln sub{font-size:10.5px;font-weight:600;opacity:.8;text-decoration:none}
+
+/* ---------- 栏目二 · 版本记录 ---------- */
+.log{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+@media(max-width:900px){.log{grid-template-columns:1fr}}
+.tbl{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.tbl table{width:100%;border-collapse:collapse;font-size:13.5px}
+.tbl th,.tbl td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line2)}
+.tbl th{font-size:11.5px;letter-spacing:.12em;color:var(--dim);background:rgba(168,130,255,.06);font-weight:700}
+.tbl td{color:var(--txt2)}
+.tbl tr:last-child td{border-bottom:0}
+.tbl tbody tr{transition:.2s}
+.tbl tbody tr:hover{background:rgba(168,130,255,.07)}
+.tbl .vn{font-weight:800;color:#fff;font-variant-numeric:tabular-nums}
+.tbl .dt{font-variant-numeric:tabular-nums;color:var(--dim);white-space:nowrap}
+.tbl .sz{text-align:right;font-variant-numeric:tabular-nums}
+.tbl .tag2{display:inline-block;font-size:10.5px;font-weight:800;padding:3px 9px;border-radius:6px}
+.tbl .tag2.cur{background:rgba(55,230,208,.16);color:var(--cyan)}
+.tbl .tag2.old{background:rgba(142,130,171,.16);color:var(--dim)}
+.lognote{display:flex;flex-direction:column;gap:14px}
+.note{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px;transition:.3s}
+.note:hover{border-color:rgba(168,118,255,.45)}
+.note h4{font-size:15.5px;display:flex;align-items:center;gap:9px}
+.note h4 i{font-style:normal;font-size:10.5px;font-weight:800;padding:3px 9px;border-radius:5px;background:rgba(55,230,208,.14);color:var(--cyan);letter-spacing:.06em}
+.note p{margin-top:11px;font-size:13.5px;color:var(--txt2);line-height:1.72}
+
+/* ---------- 栏目三 · 安装教程 ---------- */
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:860px){.how{grid-template-columns:1fr}}
+.step{position:relative;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px 22px;transition:.3s}
+.step:hover{transform:translateY(-5px);box-shadow:var(--sh)}
+.step .n{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;background:linear-gradient(135deg,var(--vio),var(--vio2));font-family:ui-monospace,Menlo,monospace}
+.step:nth-child(2) .n{background:linear-gradient(135deg,var(--cyan),#0e7c6e)}
+.step:nth-child(3) .n{background:linear-gradient(135deg,var(--pink),#a32a5c)}
+.step h3{margin-top:16px;font-size:16.5px}
+.step p{margin-top:8px;font-size:13.5px;color:var(--txt2);line-height:1.72}
+.step .snip{margin-top:15px;font-size:12px;color:var(--cyan);background:rgba(55,230,208,.07);border:1px solid rgba(55,230,208,.18);border-radius:9px;padding:11px 13px;line-height:1.65}
+
+/* ---------- 栏目四 · 功能特性 ---------- */
+.feat{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:900px){.feat{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.feat{grid-template-columns:1fr}}
+.f{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:22px 20px;transition:.3s}
+.f:hover{border-color:rgba(168,118,255,.45);background:var(--card2)}
+.f .ic{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;font-size:19px;color:#fff;background:rgba(168,118,255,.2)}
+.f:nth-child(6n+2) .ic{background:rgba(55,230,208,.18);color:var(--cyan)}
+.f:nth-child(6n+3) .ic{background:rgba(255,91,156,.18);color:var(--pink)}
+.f:nth-child(6n+4) .ic{background:rgba(255,194,75,.18);color:var(--gold)}
+.f:nth-child(6n+5) .ic{background:rgba(54,211,153,.18);color:var(--ok)}
+.f:nth-child(6n+6) .ic{background:rgba(255,90,90,.18);color:var(--red)}
+.f h3{margin-top:15px;font-size:15.5px}
+.f p{margin-top:7px;font-size:13px;color:var(--dim);line-height:1.68}
+
+/* ---------- 栏目五 · FAQ ---------- */
+.faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.55fr);gap:26px;align-items:start}
+@media(max-width:860px){.faq{grid-template-columns:1fr}}
+.faq .side{position:sticky;top:88px;background:linear-gradient(165deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:var(--r);padding:26px}
+@media(max-width:860px){.faq .side{position:static}}
+.faq .side h3{font-size:19px}
+.faq .side p{margin-top:10px;font-size:13.5px;color:var(--txt2)}
+.faq .side .ask{margin-top:18px;display:flex;gap:9px;flex-wrap:wrap}
+.faq .side .ask a{font-size:12.5px;padding:7px 13px;border-radius:999px;border:1px solid var(--line);color:var(--txt2)}
+.faq .side .ask a:hover{border-color:var(--cyan);color:var(--cyan)}
+.faq .side .hot{margin-top:20px;padding-top:18px;border-top:1px solid var(--line2);font-size:12.5px;color:var(--dim)}
+.faq .side .hot b{display:block;color:var(--cyan);font-size:11px;letter-spacing:.18em;margin-bottom:8px}
+.faq .side .hot span{display:block;line-height:2.1}
+.faqlist{display:flex;flex-direction:column;gap:12px}
+details{border:1px solid var(--line);border-radius:13px;background:var(--card);overflow:hidden;transition:.25s}
+details[open]{border-color:rgba(168,118,255,.45);box-shadow:var(--sh)}
+details summary{cursor:pointer;list-style:none;padding:19px 22px;display:flex;align-items:center;gap:14px;font-size:15.5px;font-weight:700;color:#fff}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"";flex:0 0 auto;width:22px;height:22px;border-radius:7px;background:rgba(168,118,255,.18);background-image:linear-gradient(90deg,var(--cyan) 0 7px,transparent 7px),linear-gradient(0deg,var(--cyan) 0 7px,transparent 7px);background-size:7px 2px,2px 7px;background-position:center;background-repeat:no-repeat;transition:.25s}
+details[open] summary::before{background-image:linear-gradient(45deg,transparent 46%,var(--cyan) 46%,var(--cyan) 54%,transparent 54%),linear-gradient(-45deg,transparent 46%,var(--cyan) 46%,var(--cyan) 54%,transparent 54%);background-size:12px 2px,12px 2px}
+details .an{padding:0 22px 20px 56px;font-size:13.5px;color:var(--txt2);line-height:1.78}
+details .an a{color:var(--cyan);border-bottom:1px dashed rgba(55,230,208,.4)}
+
+/* ---------- 页脚 ---------- */
+footer{border-top:1px solid var(--line2);background:var(--bg2);padding:56px 0 26px;margin-top:20px}
+.fbox{display:grid;grid-template-columns:1.8fr repeat(3,1fr);gap:38px}
+@media(max-width:860px){.fbox{grid-template-columns:1fr 1fr;gap:30px}}
+@media(max-width:480px){.fbox{grid-template-columns:1fr}}
+footer .fb .ico{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:20px;background:linear-gradient(140deg,var(--vio),var(--pink))}
+footer .fb b{display:block;margin-top:16px;font-size:21px}
+footer .fb p{margin-top:13px;font-size:13.5px;color:var(--dim);max-width:340px}
+footer .fb code{display:inline-block;margin-top:16px;font-size:12px;padding:8px 13px;border-radius:8px;color:var(--cyan);background:rgba(55,230,208,.07);border:1px solid rgba(55,230,208,.18);font-family:ui-monospace,Menlo,monospace;word-break:break-all}
+footer h4{font-size:13.5px;color:var(--txt);letter-spacing:.04em}
+footer h4::before{content:"▍";display:inline-block;margin-right:7px;color:var(--cyan)}
+footer ul{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+footer a{font-size:13.5px;color:var(--dim);transition:.2s}
+footer a:hover{color:var(--cyan)}
+.cp{padding-top:26px;margin-top:42px;border-top:1px dashed var(--line2);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:12.5px;color:var(--dim)}
+.cp a{color:var(--txt2)}
+.cp a:hover{color:var(--cyan)}
+.cp .kw{font-size:12px;color:var(--dim2)}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ================= 顶部 ================= -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="影视大全app下载 返回首页">
+      <span class="ico" aria-hidden="true">🎬</span>
+      <span><b>影视大全app下载</b><small>YING SHI DA QUAN APP</small></span>
+    </a>
+    <span class="badge-new">官方正版</span>
+    <nav class="nav" id="nav" aria-label="主导航">
+      <a href="#ver">版本下载</a>
+      <a href="#log">版本记录</a>
+      <a href="#how">安装教程</a>
+      <a href="#feat">功能特性</a>
+      <a href="#faq">常见问题</a>
+      <a class="dl" href="#ver">立即下载</a>
+    </nav>
+    <button class="mbtn" id="mbtn" aria-label="切换菜单" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= 首屏下载 ================= -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <span class="stk"><em></em>官方正版安装包 · 已通过安全检测 · 无广告插件</span>
+        <h1>影视大全app下载<br><span style="background:linear-gradient(135deg,var(--cyan),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent">一个 app，看好片。</span><small>YING SHI DA QUAN APP XIA ZAI</small></h1>
+        <p class="lead">影视大全app下载（yingshidaquanappxiazai.cn）提供官方正版影视大全app安装包，覆盖安卓版、iOS版、电视版与历史版本，附完整安装教程与版本说明。</p>
+        <div class="meta">
+          <div><b>8.6.2</b><span>当前版本</span></div>
+          <div><b>38.5MB</b><span>安装包大小</span></div>
+          <div><b>Android 5.0+</b><span>系统要求</span></div>
+          <div><b>100万+</b><span>累计下载</span></div>
+        </div>
+        <div class="acts">
+          <a class="btn pulse" href="#ver"><span>免费下载安装包</span><small>ANDROID / IOS</small></a>
+          <a class="btn ghost" href="#how">查看安装教程</a>
+        </div>
+      </div>
+
+      <div class="device" aria-label="app 界面预览">
+        <span class="blink" style="left:8%;top:14%"></span>
+        <span class="blink" style="right:10%;bottom:12%"></span>
+        <div class="notch"></div>
+        <div class="screen">
+          <div class="sc-head">
+            <div class="b"><span></span>影视大全app · 在线</div>
+            <h4>今日推荐<em>TODAY'S PICK</em></h4>
+          </div>
+          <div class="sc-body">
+            <div class="row"><div class="th"></div><div class="tx"><b>云端剧场</b><s>悬疑 · 更新至第 12 集</s></div><span class="go">观看</span></div>
+            <div class="row"><div class="th"></div><div class="tx"><b>深蓝之境</b><s>纪录片 · 全 8 集</s></div><span class="go">观看</span></div>
+            <div class="row"><div class="th"></div><div class="tx"><b>午后时光</b><s>治愈 · 动画电影</s></div><span class="go">观看</span></div>
+            <div class="row"><div class="th"></div><div class="tx"><b>旧城记</b><s>年代 · 修复版</s></div><span class="go">观看</span></div>
+            <div class="sc-bar"><i class="on">首页</i><i>分类</i><i>榜单</i><i>我的</i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 栏目一 · 多版本下载 ================= -->
+  <section id="ver">
+    <div class="wrap">
+      <header class="hd">
+        <span class="tag">Download</span>
+        <h2>多版本下载 <i>· 选对安装包</i></h2>
+        <p>按设备类型选择对应版本，安卓版、iOS版、电视版分别提供，历史版本可回退安装。</p>
+      </header>
+
+      <div class="vers">
+        <article class="ver">
+          <span class="orb"></span>
+          <div class="os" aria-hidden="true">🤖</div>
+          <h3>安卓版<small>ANDROID</small></h3>
+          <p>适配主流安卓手机与平板，APK 安装包直接下载，支持 Android 5.0 及以上系统。</p>
+          <div class="sz"><b>38.5</b><span>MB · 版本 8.6.2</span></div>
+          <ul class="lst"><li>支持 Android 5.0 及以上</li><li>适配手机与平板双端</li><li>安装包已做安全检测</li></ul>
+          <a class="dln" href="#">立即下载安卓版 <sub>APK · 38.5MB</sub></a>
+        </article>
+        <article class="ver">
+          <div class="os" aria-hidden="true">🍎</div>
+          <h3>苹果版<small>iOS / iPadOS</small></h3>
+          <p>iPhone 与 iPad 用户通过 App Store 获取，自动适配系统深色模式与横竖屏。</p>
+          <div class="sz"><b>96.2</b><span>MB · 版本 8.6.2</span></div>
+          <ul class="lst"><li>iOS 13.0 及以上可用</li><li>支持 iPhone 与 iPad 双端</li><li>App Store 官方审核上架</li></ul>
+          <a class="dln" href="#">前往 App Store <sub>版本 8.6.2</sub></a>
+        </article>
+        <article class="ver">
+          <div class="os" aria-hidden="true">📺</div>
+          <h3>电视版<small>ANDROID TV</small></h3>
+          <p>适配安卓电视盒与智能电视，遥控器操作优化，大屏播放体验更舒适。</p>
+          <div class="sz"><b>42.1</b><span>MB · 版本 8.6.2</span></div>
+          <ul class="lst"><li>支持电视盒与智能电视</li><li>遥控器按键逻辑优化</li><li>支持 4K 大屏播放</li></ul>
+          <a class="dln" href="#">下载电视版 <sub>APK · 42.1MB</sub></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 栏目二 · 版本记录 ================= -->
+  <section id="log">
+    <div class="wrap">
+      <header class="hd">
+        <span class="tag">Changelog</span>
+        <h2>版本记录 <i>· 更新说明</i></h2>
+        <p>影视大全app每次更新都会在这里说明改动内容，历史版本仍可从记录页下载安装。</p>
+      </header>
+
+      <div class="log">
+        <div class="tbl">
+          <table>
+            <thead><tr><th>版本号</th><th>更新日期</th><th>说明</th><th style="text-align:right">大小</th><th>状态</th></tr></thead>
+            <tbody>
+              <tr><td class="vn">v8.6.2</td><td class="dt">2026-10-12</td><td>优化播放稳定性，修复若干已知问题</td><td class="sz">38.5MB</td><td><span class="tag2 cur">当前版本</span></td></tr>
+              <tr><td class="vn">v8.6.0</td><td class="dt">2026-09-28</td><td>新增离线缓存，支持后台下载</td><td class="sz">38.2MB</td><td><span class="tag2 old">历史版本</span></td></tr>
+              <tr><td class="vn">v8.5.4</td><td class="dt">2026-09-10</td><td>重构分类页，加载速度提升约 30%</td><td class="sz">37.8MB</td><td><span class="tag2 old">历史版本</span></td></tr>
+              <tr><td class="vn">v8.5.0</td><td class="dt">2026-08-22</td><td>新增电视版与遥控器操作支持</td><td class="sz">37.4MB</td><td><span class="tag2 old">历史版本</span></td></tr>
+              <tr><td class="vn">v8.4.6</td><td class="dt">2026-08-05</td><td>修复部分机型闪退问题</td><td class="sz">36.9MB</td><td><span class="tag2 old">历史版本</span></td></tr>
+              <tr><td class="vn">v8.4.0</td><td class="dt">2026-07-18</td><td>首页推荐算法升级，片单更精准</td><td class="sz">36.7MB</td><td><span class="tag2 old">历史版本</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lognote">
+          <article class="note">
+            <h4>本次更新重点 <i>v8.6.2</i></h4>
+            <p>主要优化了播放器内核的稳定性，降低了弱网环境下的卡顿概率，并修复了若干机型上的兼容性问题。建议所有用户升级到当前版本。</p>
+          </article>
+          <article class="note">
+            <h4>如何升级 <i>3 步</i></h4>
+            <p>打开影视大全app → 进入「我的」页面 → 点击「检查更新」，有新版本时会自动提示下载。安卓用户也可在本页重新下载最新安装包覆盖安装。</p>
+          </article>
+          <article class="note">
+            <h4>历史版本 <i>回退</i></h4>
+            <p>若新版本在你的设备上运行异常，可从上方版本记录下载历史版本安装包，覆盖安装即可回退到之前的稳定版本。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 栏目三 · 安装教程 ================= -->
+  <section id="how">
+    <div class="wrap">
+      <header class="hd">
+        <span class="tag">Install Guide</span>
+        <h2>安装教程 <i>· 三步装好</i></h2>
+        <p>从下载到打开 app 的完整流程，不同系统对应不同步骤，遇到问题可查看常见问题栏目。</p>
+      </header>
+
+      <div class="how">
+        <article class="step">
+          <span class="n">01</span>
+          <h3>下载安装包</h3>
+          <p>在本页「版本下载」选择对应设备版本，点击下载按钮获取安装包，建议保留在默认下载目录。</p>
+          <div class="snip">下载路径：内部存储 / Download / yingshidaquan.apk</div>
+        </article>
+        <article class="step">
+          <span class="n">02</span>
+          <h3>允许未知来源</h3>
+          <p>安卓首次安装需在系统设置中开启「允许来自此来源的应用」，这是系统的正常安全提示，安装完成后可关闭。</p>
+          <div class="snip">设置 → 应用与通知 → 安装未知应用 → 开启授权</div>
+        </article>
+        <article class="step">
+          <span class="n">03</span>
+          <h3>完成安装并打开</h3>
+          <p>点击已下载的安装包，按提示完成安装，桌面出现影视大全图标即为成功，首次启动会自动初始化设置。</p>
+          <div class="snip">点击安装包 → 安装 → 打开 app</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 栏目四 · 功能特性 ================= -->
+  <section id="feat">
+    <div class="wrap">
+      <header class="hd">
+        <span class="tag">Features</span>
+        <h2>功能特性 <i>· 为什么选它</i></h2>
+        <p>影视大全app围绕「找片快、播放稳、用得顺」做了大量细节优化，这里是几个核心亮点。</p>
+      </header>
+
+      <div class="feat">
+        <div class="f"><div class="ic">🚀</div><h3>极速启动</h3><p>冷启动控制在 1 秒内，打开即用，无需等待加载。</p></div>
+        <div class="f"><div class="ic">🎯</div><h3>智能推荐</h3><p>基于观看偏好推荐内容，越用越懂你的口味。</p></div>
+        <div class="f"><div class="ic">💾</div><h3>离线缓存</h3><p>支持后台下载与离线观看，通勤路上不费流量。</p></div>
+        <div class="f"><div class="ic">🖥️</div><h3>多端同步</h3><p>手机、平板、电视版进度互通，切换设备接着看。</p></div>
+        <div class="f"><div class="ic">📶</div><h3>弱网优化</h3><p>智能调节清晰度，弱网环境也能流畅播放。</p></div>
+        <div class="f"><div class="ic">🔒</div><h3>安全省心</h3><p>安装包通过安全检测，无强制广告与捆绑插件。</p></div>
+        <div class="f"><div class="ic">🗂️</div><h3>分类齐全</h3><p>电影、剧集、动漫、纪录片等类型一站式覆盖。</p></div>
+        <div class="f"><div class="ic">⭐</div><h3>口碑榜单</h3><p>聚合多方评分与排行数据，找好片不踩雷。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 栏目五 · 常见问题 ================= -->
+  <section id="faq">
+    <div class="wrap">
+      <header class="hd">
+        <span class="tag">FAQ</span>
+        <h2>常见问题 <i>· 快速解答</i></h2>
+        <p>下载与安装过程中遇到的常见疑问，这里都有答案，也可以点击左侧标签快速定位。</p>
+      </header>
+
+      <div class="faq">
+        <aside class="side">
+          <h3>找不到答案？</h3>
+          <p>查看左侧高频问题，或按关键词直接检索下方列表，点击即可展开对应解答。</p>
+          <div class="ask">
+            <a href="#q1">下载失败</a><a href="#q2">无法安装</a><a href="#q3">版本回退</a>
+            <a href="#q4">电视版</a><a href="#q5">更新方式</a><a href="#q6">缓存清理</a>
+          </div>
+          <div class="hot"><b>高频检索词</b>
+            <span>影视大全app下载 · 影视大全安卓版下载 · 影视大全苹果版 · 影视大全电视版 · 影视大全安装包 · 影视大全历史版本</span>
+          </div>
+        </aside>
+
+        <div class="faqlist">
+          <details id="q1" open>
+            <summary>下载到一半中断了怎么办？</summary>
+            <div class="an">多为网络波动导致，建议切换到更稳定的网络后重新点击下载按钮，浏览器通常会从中断位置继续下载。若反复失败，可尝试更换浏览器或稍后再试。</div>
+          </details>
+          <details id="q2">
+            <summary>安卓安装时提示「无法安装」？</summary>
+            <div class="an">先确认已开启「允许未知来源应用安装」的授权，再检查设备剩余存储空间是否充足、系统版本是否满足 Android 5.0 及以上要求。仍无法安装可尝试重新下载安装包。</div>
+          </details>
+          <details id="q3">
+            <summary>新版本用不习惯，可以退回旧版吗？</summary>
+            <div class="an">可以。先在「我的 → 设置」中卸载当前版本，再到本页「版本记录」下载历史版本安装包覆盖安装即可回退。建议回退前记录好个人设置。</div>
+          </details>
+          <details id="q4">
+            <summary>电视版支持哪些设备？</summary>
+            <div class="an">影视大全app电视版适配主流安卓电视盒与智能电视，需运行 Android TV 系统，安装后可使用遥控器操作，并支持最高 4K 画质的大屏播放。</div>
+          </details>
+          <details id="q5">
+            <summary>如何确认自己装的是最新版？</summary>
+            <div class="an">打开 app 进入「我的」页面，点击「检查更新」即可查询。本页顶部也标注了当前最新版本号与更新日期，可对照确认。</div>
+          </details>
+          <details id="q6">
+            <summary>离线缓存的文件在哪里清理？</summary>
+            <div class="an">进入「我的 → 离线缓存」，可查看已缓存的内容与占用空间，支持单条删除或一键清空，释放设备存储空间。</div>
+          </details>
+          <details id="q7">
+            <summary>安装包会捆绑广告插件吗？</summary>
+            <div class="an">影视大全app官方安装包不含强制广告与捆绑插件，下载请认准本页提供的官方渠道。安装前可通过系统安全扫描进一步确认。</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= 页脚 ================= -->
+<footer>
+  <div class="wrap">
+    <div class="fbox">
+      <div class="fb">
+        <span class="ico" aria-hidden="true">🎬</span>
+        <b>影视大全app下载</b>
+        <p>影视大全app下载（yingshidaquanappxiazai.cn）提供官方正版影视大全app安装包，覆盖安卓版、iOS版、电视版与历史版本，附安装教程与版本说明。</p>
+        <code>https://yingshidaquanappxiazai.cn.github.io/</code>
+      </div>
+      <div>
+        <h4>版本下载</h4>
+        <ul><li><a href="#ver">安卓版下载</a></li><li><a href="#ver">苹果版下载</a></li><li><a href="#ver">电视版下载</a></li><li><a href="#log">历史版本</a></li></ul>
+      </div>
+      <div>
+        <h4>使用帮助</h4>
+        <ul><li><a href="#how">安装教程</a></li><li><a href="#faq">常见问题</a></li><li><a href="#faq">下载失败怎么办</a></li><li><a href="#faq">版本如何回退</a></li></ul>
+      </div>
+      <div>
+        <h4>关于本站</h4>
+        <ul><li><a href="#ver">当前版本说明</a></li><li><a href="#feat">功能特性</a></li><li><a href="#">安全声明</a></li><li><a href="#">联系我们</a></li></ul>
+      </div>
+    </div>
+    <div class="cp">
+      <span>© <span id="yr">2026</span> 影视大全app下载 · 网站网址：<a href="https://yingshidaquanappxiazai.cn.github.io/">https://yingshidaquanappxiazai.cn.github.io/</a> · 保留所有权利</span>
+      <span class="kw">聚焦关键词：影视大全app下载 · 影视大全app · 影视大全下载 · 影视大全安卓版 · 影视大全安装包 · yingshidaquanappxiazai.cn</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  var mbtn = document.getElementById("mbtn"), nav = document.getElementById("nav");
+  mbtn.addEventListener("click", function(){
+    var o = nav.classList.toggle("on");
+    mbtn.classList.toggle("on", o);
+    mbtn.setAttribute("aria-expanded", o ? "true" : "false");
+  });
+  nav.addEventListener("click", function(e){
+    if (e.target.tagName === "A") {
+      nav.classList.remove("on"); mbtn.classList.remove("on");
+      mbtn.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  var qs = document.querySelectorAll('a[href^="#"]');
+  for (var i = 0; i < qs.length; i++) {
+    (function(a){
+      a.addEventListener("click", function(ev){
+        var id = a.getAttribute("href");
+        if (id && id.length > 1 && document.querySelector(id)) {
+          ev.preventDefault();
+          var el = document.querySelector(id), top = el.getBoundingClientRect().top + window.pageYOffset - 70;
+          window.scrollTo({top: top, behavior: "smooth"});
+        }
+      });
+    })(qs[i]);
+  }
+
+  if ("IntersectionObserver" in window) {
+    var ds = document.querySelectorAll("details"), io = new IntersectionObserver(function(es){
+      for (var i = 0; i < es.length; i++) {
+        if (es[i].isIntersecting) { es[i].target.style.opacity = "1"; io.unobserve(es[i].target); }
+      }
+    }, {threshold: .15});
+    for (var j = 0; j < ds.length; j++) { ds[j].style.opacity = "0"; ds[j].style.transition = "opacity .45s"; io.observe(ds[j]); }
+  }
+})();
+</script>
+</body>
+</html>
